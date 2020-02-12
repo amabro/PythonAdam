@@ -1,0 +1,77 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMdoYBOtfwtA87GgDJ82Xas",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/amabro/PythonAdam/blob/master/For%20Loop\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XZeJeBsuGdnf",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KpGcmHxhGyxO",
+        "colab_type": "text"
+      },
+      "source": [
+        "For loop, used to re-iterate a list"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "198_KAcMGvF_",
+        "colab_type": "text"
+      },
+      "source": [
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7EBiBwuYGwHV",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "exampleList = [1,5,6,7,8,9,1,2,3,]\n",
+        "\n",
+        "for eachNumber in exampleList:\n",
+        "    print(eachNumber)\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
