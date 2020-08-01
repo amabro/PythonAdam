@@ -1,0 +1,472 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled25.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNvdOrtWds9eG5cOEq5d6zb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/amabro/PythonAdam/blob/master/list_tuples_string\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "v8Lpu2FnPfTw",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "5741335a-1574-4672-bdec-d8d5b0d515f1"
+      },
+      "source": [
+        "first_msg = \"I rock always. \"\n",
+        "second_msg = \"we will rock with you. \"\n",
+        "\n",
+        "final_msg = first_msg + second_msg\n",
+        "print(final_msg)\n"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "I rock always. we will rock with you. \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kJhJPcJkQnS8",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 52
+        },
+        "outputId": "33760cb6-c298-4810-849e-f1201bab0003"
+      },
+      "source": [
+        "dreams = ['DPhil', 'Keto_rest', 'Deep_learning_ket_health_researcher']\n",
+        "print(dreams)\n",
+        "\n",
+        "# Get the first item of the list\n",
+        "dreams[0]"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['DPhil', 'Keto_rest', 'Deep_learning_ket_health_researcher']\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'DPhil'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_ryPxGaQRwW6",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "1c3f229a-7fa0-47ec-91dc-08c71d95a519"
+      },
+      "source": [
+        "# Get the last item of the list\n",
+        "dreams[-1]"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Deep_learning_ket_health_researcher'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "iVfG_UBHUz3Q",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "fe4c7b00-e71a-43c7-882e-0db67c39d528"
+      },
+      "source": [
+        "# Get first item of the list\n",
+        "dreams[0]"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'DPhil'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-Meom7ltVEzO",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 67
+        },
+        "outputId": "b6d6ada7-c3b3-476c-9901-339a3850621c"
+      },
+      "source": [
+        "# Looping through a list\n",
+        "for dream in dreams:\n",
+        "  print(dream)"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "DPhil\n",
+            "Keto_rest\n",
+            "Deep_learning_ket_health_researcher\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "8v_iMQiRWSer",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 67
+        },
+        "outputId": "0052ce57-f16c-4a01-8d3b-4b189224d129"
+      },
+      "source": [
+        "# Adding item to the list\n",
+        "\n",
+        "ambitions = []\n",
+        "print(ambitions)\n",
+        "\n",
+        "ambitions.append(['speak deucth'])\n",
+        "ambitions.append(['speak dansk'])\n",
+        "ambitions.append(['speak italian'])\n",
+        "ambitions.append(['speak spanish'])\n",
+        "ambitions.append(['speak arabic'])\n",
+        "print(ambitions)\n",
+        "\n",
+        "print(ambitions[1][0])\n"
+      ],
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[]\n",
+            "[['speak deucth'], ['speak dansk'], ['speak italian'], ['speak spanish'], ['speak arabic']]\n",
+            "speak dansk\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zGfnHk3yYZb5",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "1056da47-a6ab-4591-8d35-84c3af1ce65c"
+      },
+      "source": [
+        "# Making Numerical List\n",
+        "books = []\n",
+        "for x in range(1,10):\n",
+        "  books.append(x**2)\n",
+        "\n",
+        "print(books)"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 4, 9, 16, 25, 36, 49, 64, 81]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xAE5kYExaXq0",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "c1892ec7-6b0e-4223-e61d-0bb94b9dc864"
+      },
+      "source": [
+        "books = []\n",
+        "books = [x**3 for x in range (1,15)]\n",
+        "print(books)"
+      ],
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331, 1728, 2197, 2744]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZC0PCoqKbIBP",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "4d2f22d8-804b-4cca-cebe-b0a57c5ab53f"
+      },
+      "source": [
+        "# slicing a list\n",
+        "\n",
+        "books[:3]"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 8, 27]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uVabqjdebVYs",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "7b5eef7b-a1cb-4f4b-a298-d1f15c614d8a"
+      },
+      "source": [
+        "# copy a list\n",
+        "books_copy = books[:]\n",
+        "print(books_copy)"
+      ],
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331, 1728, 2197, 2744]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5FTlpy4MbljD",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Tuples"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uxvh_TZAb14C",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "0a5c29e6-7d2d-40f4-b37e-64308694b6e3"
+      },
+      "source": [
+        "dim = (2, 3)\n",
+        "print(dim)"
+      ],
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "(2, 3)\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "bibwLq9zcs82",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "1a86f9d6-d680-47db-876e-532361af18b5"
+      },
+      "source": [
+        "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "print(thistuple)"
+      ],
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "('apple', 'banana', 'cherry')\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "In0iZ7yTc9iG",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "91ba53a5-1c4e-4665-99b9-24b9bcfd43df"
+      },
+      "source": [
+        "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "print(thistuple[1])"
+      ],
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "banana\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QzHIp8SXdStt",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "2dbf2183-0528-4981-d5b0-edf111e14cc1"
+      },
+      "source": [
+        "# change tuple to list\n",
+        "x = list(thistuple)\n",
+        "x[1] = 'cheese'\n",
+        "print(x)"
+      ],
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['apple', 'cheese', 'cherry']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
